@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Button - Bootstrap Demo</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrapDemo.css">
+    </head>
+    <body>
+        <div class="container-fluid bdNavBarWidth">
+            <nav class="navbar fixed-top bdNavBarBG">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Bootstrap Demo</div>
+                </div>
+
+            </nav>
+
+            <div class="row bdContent">
+                <div class="col-md-2 bdScroll">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-info bdCenterText active"href="button.html">Buttons</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="table.html">Table</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="images.html">Images</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="jumbotron.html">Jumbotron</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="alert.html">Alert</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="button_group.html">Button Group</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="badges.html">Badges</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="progress_bar.html">Progress Bar</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="pagination.html">Pagination</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="list_groups.html">List Groups</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="cards.html">Cards</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="dropdowns.html">Dropdowns</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="collapse.html">Collapse</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="navs.html">Navs</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="nav_bar.html">Nav Bar</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="forms.html">Forms</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="inputs.html">Inputs</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="input_group.html">Input Group</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="custom_form.html">Custom Form</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="carousel.html">Carousel</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="modal.html">Modal</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="tooltip.html">Tooltip</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="popover.html">Popover</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="scrollspy.html">Scrollspy</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="flex.html">Flex</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="media_objects.html">Media Objects</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="filters.html">Filters</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="extras.html">Extras</a>
+                    </div>
+
+                </div>
+                <div class="col-md-10 bdPlayArea">
+                    <h2>Button</h2>
+                    <br>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary btn-lg">Secondary</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-success btn-sm">Success</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-dark">Dark</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-link">Link</button>
+                    <br>
+                    <hr>
+                    <button class="btn btn-primary btn-lg">Large Button</button>
+                    <button class="btn btn-success btn-sm">Small Button</button>
+                    <br>
+                    <hr>
+                    <button class="btn btn-outline-primary">Primary Outline</button>
+                    <button class="btn btn-outline-secondary">Secondary Outline</button>
+                    <button class="btn btn-outline-success">Success Outline</button>
+                    <button class="btn btn-outline-danger">Danger Outline</button>
+                    <button class="btn btn-outline-warning">Warning Outline</button>
+                    <butten class="btn btn-outline-info">Info Outline</butten>
+                    <button class="btn btn-outline-link">Link Outline</button>
+                    <button class="btn btn-outline-dark">Dark Outline</button>
+                    <button class="btn btn-outline-light">Light Outline</button>
+                    <br>
+                    <hr>
+                    <button class="btn btn-block btn-primary">Button Block Primary</button>
+                    <button class="btn btn-block btn-danger">Button Block Danger</button>
+                    <br>
+                    <hr>
+
+                    <h2>Using JavaScript</h2>
+                    <button id="demo-toggle" class="btn btn-outline-primary">Demo Toggle</button>
+                    <br><br>
+                    <code>
+                        $("#bdToggle").on('click',function(){<br>
+                        dt = $("#demo-toggle");<br>
+                        if(dt.hasClass("btn-outline-primary")){<br>
+                        &emsp;dt.removeClass("btn-outline-primary").addClass("btn-primary");<br>
+                        }<br>
+                        else{<br>
+                        &emsp;dt.removeClass("btn-primary").addClass("btn-outline-primary");   <br>   
+                        }<br>
+                        }<br>
+                    </code>
+                    <br>
+                    <figure></figure>
+                    <button class="btn btn-primary btn-block" id="bdToggle">Toggle Outline To/From Normal Button</button>
+                    <br>
+                    <hr>
+                    <label>Toggles push state. Gives the button the appearance that it has been activated.</label><br>
+                    <code>
+                        $().button('toggle')
+                    </code>
+                    <br>
+                    <hr>
+                    <label>Destroys an element’s button.</label>
+                    <br>
+                    <code>
+                        $().button('dispose')
+                    </code>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#bdToggle").click(function(){
+                    dt = $("#demo-toggle");
+                    if(dt.hasClass("btn-outline-primary")){
+                        dt.removeClass("btn-outline-primary").addClass("btn-primary");
+                    }
+                    else{
+                        dt.removeClass("btn-primary").addClass("btn-outline-primary");      
+                    }
+                }
+                                    );
+
+            });
+        </script>
+        <script src="bootstrapDemo.js"></script>
+    </body>
+</html>

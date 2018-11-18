@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Carousel - Bootstrap Demo</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrapDemo.css">
+    </head>
+    <body>
+        <div class="container-fluid bdNavBarWidth">
+            <nav class="navbar fixed-top bdNavBarBG">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Bootstrap Demo</div>
+                </div>
+
+            </nav>
+
+            <div class="row bdContent">
+                <div class="col-md-2 bdScrollDiv">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-info bdCenterText"href="button.html">Buttons</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="table.html">Table</a>
+                        <a class="list-group-item list-group-item-info bdCenterText "href="images.html">Images</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="jumbotron.html">Jumbotron</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="alert.html">Alert</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="button_group.html">Button Group</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="badges.html">Badges</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="progress_bar.html">Progress Bar</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="pagination.html">Pagination</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="list_groups.html">List Groups</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="cards.html">Cards</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="dropdowns.html">Dropdowns</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="collapse.html">Collapse</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="navs.html">Navs</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="nav_bar.html">Nav Bar</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="forms.html">Forms</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="inputs.html">Inputs</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="input_group.html">Input Group</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="custom_form.html">Custom Form</a>
+                        <a class="list-group-item list-group-item-info bdCenterText active" href="carousel.html">Carousel</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="modal.html">Modal</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="tooltip.html">Tooltip</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="popover.html">Popover</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="scrollspy.html">Scrollspy</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="flex.html">Flex</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="media_objects.html">Media Objects</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="filters.html">Filters</a>
+                        <a class="list-group-item list-group-item-info bdCenterText" href="extras.html">Extras</a>
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                   <h2>Corousel</h2><hr>
+                    <div class="col-md-8 offset-md-2" style="background-color:black;">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                                <li data-target="#demo" data-slide-to="3"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/newyork.jpg" alt="NewYork">
+                                    <div class="carousel-caption">
+                                        <h3>New York</h3>
+                                        <p>We had such a great time in Big Apple!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/paris.jpg" alt="Paris">
+                                    <div class="carousel-caption">
+                                        <h3>Paris</h3>
+                                        <p>We had such a great time in France!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sanfran.jpg" alt="Sanfransisco">
+                                    <div class="carousel-caption">
+                                        <h3>Sanfransisco</h3>
+                                        <p>We had such a great time in US!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cinqueterre.jpg" alt="cinqueterre">
+                                    <div class="carousel-caption">
+                                        <h3>cinqueterre</h3>
+                                        <p>This World is Crazzy!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="script/popper.min.js"></script>
+
+    </body>
+</html>
